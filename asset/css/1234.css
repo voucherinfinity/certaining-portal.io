@@ -966,3 +966,22 @@ thead tr th {
 	border-radius: 25px;
 	font-size: large;
 }
+/* .amountvoucher{
+	
+	font-weight: 900;
+} */
+.examvoucher{
+	
+	font-weight: 900;
+}
+.amount1voucher{
+	font-weight: 900;
+	
+}
+.amount1voucher a:before{
+	padding-left: 10px;
+	border: 2px solid #8bc34a!important ;
+}
+.amountvoucher{
+	font-weight: 900;
+}
