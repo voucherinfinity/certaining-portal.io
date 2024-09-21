@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <meta name="viewport" content="initial-scale=1.0; user-scalable=1;">
+
+    <title>Dashboard Central Panel</title>
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+   
+    <!-- <link href="/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- NProgress -->
+    <!-- <link href="../vendors/nprogress/nprogress.css" rel="stylesheet"> -->
+    <!-- iCheck -->
+    <!-- <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet"> -->
+	
+    <!-- bootstrap-progressbar -->
+    <!-- <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet"> -->
+    <!-- JQVMap -->
+    <!-- <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/> -->
+    <!-- bootstrap-daterangepicker -->
+    <!-- <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet"> -->
+
+    <!-- Custom Theme Style -->
+    <!-- <link href="/build/css/custom.min.css" rel="stylesheet"> -->
+   
+    <!-- <link rel="stylesheet" href="/scss/custom.scss"> -->
+    <!-- <link rel="stylesheet" href="/build/css/123.css"> -->
+    <link rel="stylesheet" href="/asset/css/1234.css">
+    <!-- <link rel="stylesheet" href="/build/css/custom.min.css"> -->
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><img src="/asset/img/Logo1 (2).png" width="90%" alt="" srcset=""> </a>
+            </div>
+
+            <div class="clearfix"></div>
+
+           
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="/asset/img/profile.webp" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>       
+            <br/>          
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <!-- <h3>General</h3> -->
+                <ul class="nav side-menu">
+                  <li>
+                    <a href="/dashboard.html"><i class="fa fa-home"></i> Dashboard 
+                      </a>
+                    <!-- <ul class="nav child_menu">
+                      <li><a href="index.html">Dashboard</a></li>
+                      <li><a href="index2.html">Dashboard2</a></li>
+                      <li><a href="index3.html">Dashboard3</a></li>
+                    </ul> -->
+                  </li>
+                  <li><a href="/candidate-history.html">
+                    <i class="fa fa-history" aria-hidden="true"></i>
+                     Candidate History </a>
+                    <!-- <ul class="nav child_menu">
+                      <li><a href="form.html">General Form</a></li>
+                      <li><a href="form_advanced.html">Advanced Components</a></li>
+                      <li><a href="form_validation.html">Form Validation</a></li>
+                      <li><a href="form_wizards.html">Form Wizard</a></li>
+                      <li><a href="form_upload.html">Form Upload</a></li>
+                      <li><a href="form_buttons.html">Form Buttons</a></li>
+                    </ul> -->
+                  </li>
+                  <li><a href="/today-exam.html"><i class="fa fa-desktop"></i> Today's Exam </a>
+                    <!-- <ul class="nav child_menu">
+                      <li><a href="general_elements.html">General Elements</a></li>
+                      <li><a href="media_gallery.html">Media Gallery</a></li>
+                      <li><a href="typography.html">Typography</a></li>
+                      <li><a href="icons.html">Icons</a></li>
+                      <li><a href="glyphicons.html">Glyphicons</a></li>
+                      <li><a href="widgets.html">Widgets</a></li>
+                      <li><a href="invoice.html">Invoice</a></li>
+                      <li><a href="inbox.html">Inbox</a></li>
+                      <li><a href="calendar.html">Calendar</a></li>
+                    </ul> -->
+                  </li>
+                  <li><a href="/upcoming-exam.html"><i class="fa fa-table"></i> Upcoming Exam </a>
+                    <!-- <ul class="nav child_menu">
+                      <li><a href="tables.html">Tables</a></li>
+                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                    </ul> -->
+                  </li>
+                  <li>
+                    <a href="/cancel-exam.html">
+                      <i class="fa fa-calendar-times-o" aria-hidden="true"></i> Cancel Exam </a>
+                    
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-edit"></i> Shedule New Exam </a>
+                    
+                  </li>
+                  <li>
+                    <a href="/reschedule-exam.html">
+                      <i class="fa fa-refresh" aria-hidden="true"></i> Re-schedule Exam </a>
+                    
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-sign-in" aria-hidden="true"></i> Exam Login Details </a>
+                    
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-ticket" aria-hidden="true"></i> Voucher Request </a>
+                    
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-list-alt" aria-hidden="true"></i> Report </a>
+                    
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                       Support </a>
+                    
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-check" aria-hidden="true"></i> Seat Availability </a>
+                    
+                  </li>
+                </ul>
+              </div>
+           
+            </div>
+          
+
+        
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <!-- <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a> -->
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <i class="fa fa-power-off" aria-hidden="true"></i>
+              </a>
+            </div>
+          
+          </div>
+        </div>
+
+ 
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+              <ul class=" navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="/asset/img/profile.webp" alt="">John Doe
+                  </a>
+
+
+                  <!----yaha tak katam hoo gya--->
+                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                      <a class="dropdown-item"  href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                  <a class="dropdown-item"  href="javascript:;">Help</a>
+                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                  </div>
+                </li>
+
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+       
+
+        
+        <div class="right_col" role="main" style="min-height: 102vh;">
+            <div class="container">
+                <div class="row">
+                    <h2 class="header" style="margin-left: 10px;">
+                        Follow Steps to Schedule New Exam
+
+                    </h2>
+                    
+
+                </div>
+                
+                <!-- <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-" style="text-align: center;">
+                        <button>Provides Details </button>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-" style="text-align: center;">
+                        <button>Provides Details </button>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-" style="text-align: center;">
+                        <button>Provides Details </button>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-" style="text-align: center;">
+                        <button>Provides Details </button>
+                    </div>
+    
+                    <form class="multiform mt-5" >
+                      <fieldset class="provide details">
+
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <h1 class="header"><span>Personal Information ( * mandatory fields)
+                                </span></h1>
+                                <br>
+                            </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="text" class="form-control" placeholder="First name">
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="text" class="form-control" placeholder="Middle name">
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="text" class="form-control" placeholder="Last name">
+                          </div>
+                        </div>                    
+                        <div class="form-row pt-3">
+                          <br>
+                          <div class="col-md-12 ">
+                            <h1 class="header">
+                                <span>
+                                    Contact Information ( * mandatory fields)
+                                </span>
+                            </h1>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="number" class="form-control" placeholder="Mobile Number">
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="number" class="form-control" placeholder="Landline No">
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="email" class="form-control" placeholder="Current Address">
+                          </div>
+                          
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="number" class="form-control" placeholder="Permanent Address">
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="number" class="form-control" placeholder="Country">
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="email" class="form-control" placeholder="State">
+                          </div>
+                          
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="number" class="form-control" placeholder="City">
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="number" class="form-control" placeholder="Postal Code">
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-3">
+                            <button> Prev</button>
+                            <button>Submit</button>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <fieldset class="fill-exam">
+                        <div class="form-row">
+                          <div class="col-md-12">
+                              <h1 class="header"><span>Personal Information ( * mandatory fields)
+                              </span></h1>
+                              <br>
+                          </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="text" class="form-control" placeholder="Middle name">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                      </div>                    
+                      <div class="form-row pt-3">
+                        <br>
+                        <div class="col-md-12 ">
+                          <h1 class="header">
+                              <span>
+                                  Contact Information ( * mandatory fields)
+                              </span>
+                          </h1>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Mobile Number">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Landline No">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="email" class="form-control" placeholder="Current Address">
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Permanent Address">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Country">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="email" class="form-control" placeholder="State">
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="City">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Postal Code">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                          <button> Prev</button>
+                          <button>Submit</button>
+                        </div>
+                      </div>
+                      </fieldset>
+                      <fieldset class="review-details">
+                        <div class="form-row">
+                          <div class="col-md-12">
+                              <h1 class="header"><span>Personal Information ( * mandatory fields)
+                              </span></h1>
+                              <br>
+                          </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="text" class="form-control" placeholder="Middle name">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                      </div>                    
+                      <div class="form-row pt-3">
+                        <br>
+                        <div class="col-md-12 ">
+                          <h1 class="header">
+                              <span>
+                                  Contact Information ( * mandatory fields)
+                              </span>
+                          </h1>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Mobile Number">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Landline No">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="email" class="form-control" placeholder="Current Address">
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Permanent Address">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Country">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="email" class="form-control" placeholder="State">
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="City">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Postal Code">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                          <button> Prev</button>
+                          <button>Submit</button>
+                        </div>
+                      </div>
+                      </fieldset>
+                      <fieldset class="payment">
+                        <div class="form-row">
+                          <div class="col-md-12">
+                              <h1 class="header"><span>Personal Information ( * mandatory fields)
+                              </span></h1>
+                              <br>
+                          </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="text" class="form-control" placeholder="Middle name">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                      </div>                    
+                      <div class="form-row pt-3">
+                        <br>
+                        <div class="col-md-12 ">
+                          <h1 class="header">
+                              <span>
+                                  Contact Information ( * mandatory fields)
+                              </span>
+                          </h1>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Mobile Number">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Landline No">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="email" class="form-control" placeholder="Current Address">
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Permanent Address">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Country">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="email" class="form-control" placeholder="State">
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="City">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                          <input type="number" class="form-control" placeholder="Postal Code">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                          <button> Prev</button>
+                          <button>Submit</button>
+                        </div>
+                      </div>
+                      </fieldset>
+
+
+                    </form>
+                </div> -->
+            
+                <div class="row">
+                  <div class="multiform mt-5">
+                    <fieldset class="provide-details">
+                      <div class="form-row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <p>Personal Information ( * mandatory fields)</p>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">First Name: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="text" name="" id="" placeholder="First Name">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Middle Name:</label>
+                          <input class="form-control" type="text" name="" id="" placeholder="Middle Name">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Last Name: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="text" name="" id="" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-12">
+                         <p> Contact Information ( * mandatory fields) </p>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Email Address: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="email" name="" id="" placeholder="Email Address">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Mobile Number: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="number" name="" id="" placeholder="Mobile Number">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Phone Number: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="number" name="" id="" placeholder="Phone Number">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Current Address: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="text" name="" id="" placeholder="Current Address">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Permanent Address: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="text" name="" id="" placeholder="Permanent Address">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Select State:<span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="text" name="" id="" placeholder="State">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">City: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="text" name="" id="" placeholder="City">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Pincode: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="number" name="" id="" placeholder="Pincode">
+                        </div>
+                        <div class="col-md-12"> 
+                          <p>Candidate ID (Please Note Candidate ID before Proceeding) </p>
+                        </div>
+                        <div class="col-md-6">
+                          <input class="form-control" type="text" name="" id="" disabled placeholder="BC19992295">
+                        </div>
+                        <div class="col-md-12">
+                          <!-- <button type="button" class="prev-btn" style="float: inline-end;">Previous</button> -->
+                          <button type="button" class="next-btn" style="float: inline-end; background-color: #2a3f54; color: white;" >Next</button>
+                        </div>
+                        
+                      </div>
+                    </fieldset>                    
+                    <fieldset class="fill-exam" style="display:none;">
+                      <div class="form-row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <p>Exam Information ( * mandatory fields)</p>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Select Your Exam: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option value="" disabled selected>Select Your Exam</option>
+                            <option>Certaining Certified Big Data Professional</option>
+                            <option>Certaining Certified Business Analyst</option>
+                            <option>Certaining Certified Customer Experience Professional</option>
+                            <option>Certaining Certified DevOps Professional</option>
+                            <option>Certaining Certified Digital Marketing Professional</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Test Center Code: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="text" name="" id="" disabled placeholder="BTC1134">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Test Center Code: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="text" name="" id="" disabled placeholder="New Delhi">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Exam Fees: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input class="form-control" type="text" name="" id="" disabled placeholder="$200">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Exam Date: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input type="date" class="form-control placeholder" id="calendar" onfocus="removePlaceholder()" onblur="addPlaceholder()" placeholder="Select a date">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="">Exam Time: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input id="examTime" type="time" class="form-control" min="09:00" max="17:00">
+                        </div>
+                        <div class="col-md-12" style="float: inline-end;">
+                          <button type="button" class="next-btn" style="float: inline-end; background-color: #2a3f54; color: white;" >Next</button>
+                          <button  type="button" class="prev-btn">Previous</button>
+                        </div>
+                        
+                        <!-- <button  type="button" class="prev-btn">Previous</button> -->
+                        
+                      </div>
+                    </fieldset>
+                    <fieldset class="review-details" style="display: none;">
+                      <div class="form-row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <p>Review Details ( * mandatory fields)</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 d-flex  ">                          
+                            <h5 style="font-weight: bold;">
+                              Register Number
+                            </h5>
+                        </div>
+                        <div class="col-lg-6 ">
+                            <h2>
+                              BCI19992295
+                            </h2>                        
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 d-flex ">                          
+                          <h5 style="font-weight: bold;">
+                            Exam Date
+                          </h5>                          
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <h2>
+                            19-09-2024
+                          </h2>                        
+                        </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6  ">                          
+                        <h5 style="font-weight: bold;">
+                          Exam Time
+                        </h5>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h2>
+                          09:30 Am
+                        </h2>                        
+                      </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 ">                        
+                          <h5 style="font-weight: bold;">Candidate Name</h5>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                          <h2>Jeetender Kumar</h2>                        
+                        </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6  ">                          
+                        <h5 style="font-weight: bold;">
+                          Email ID
+                        </h5>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h2>
+                          test@gmail.com
+                        </h2>                        
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 d-flex  ">                          
+                        <h5 style="font-weight: bold;">
+                          Mobile Number
+                        </h5>
+                      </div>
+                      <div class="col-lg-6 col-sm-6 col-md-6">
+                        <h2>
+                          9911493479
+                        </h2>                        
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 ">                          
+                        <h5 style="font-weight: bold;">
+                          Address
+                        </h5>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h2>
+                          A-48 mangolpuri industrial area phease 2
+                        </h2>                        
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6  ">                          
+                        <h5 style="font-weight: bold;">
+                          Country
+                        </h5>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h2>
+                          India
+                        </h2>                        
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6  ">                          
+                        <h5 style="font-weight: bold;">
+                          State
+                        </h5>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h2>
+                          Delhi
+                        </h2>                        
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 ">                          
+                        <h5 style="font-weight: bold;">
+                          City
+                        </h5>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h2>
+                          Delhi
+                        </h2>                        
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">                          
+                        <h5 style="font-weight: bold;">
+                          Pincode
+                        </h5>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h2>
+                          110086
+                        </h2>                        
+                      </div>
+                      <div class="col-md-12" style="float: inline-end;">
+                        <button type="button" class="next-btn" style="float: inline-end; background-color: #2a3f54; color: white;" >Next</button>
+                        <button  type="button" class="prev-btn" >Previous</button>
+                      </div>                                         
+                        <!-- <button  type="button" class="prev-btn">Previous</button> -->
+                        
+                      </div>
+                    </fieldset>
+                    <fieldset class="payment" style="display: none;">
+                      <div class="form-row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <p>payment ( * mandatory fields)</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                          <P>Enter Voucher Code</P>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                          <input class="form-control" type="text" name="" id=""  placeholder="Enter a Voucher Code">
+                        </div>                       
+                        <div class="col-md-12" style="float: inline-end;">
+                          <button type="button" class="next-btn" style="float: inline-end; background-color: #2a3f54; color: white;" >Submit</button>
+                          <button  type="button" class="prev-btn" >Previous</button>
+                        </div>
+                        
+                        <!-- <button  type="button" class="prev-btn">Previous</button> -->
+                        
+                      </div>
+                    </fieldset>
+
+                    <!-- <script>
+                          document.querySelector('.next-btn').addEventListener('click', function() {
+                          document.querySelector('.provide-details').style.display = 'none';
+                          document.querySelector('.fill-exam').style.display = 'block';
+                          document.querySelector
+                        });
+
+                        document.querySelector('.prev-btn').addEventListener('click', function() {
+                          document.querySelector('.fill-exam').style.display = 'none';
+                          document.querySelector('.provide-details').style.display = 'block';
+                        });
+                    </script> -->
+                    
+                    <script>
+                      // Function to show the current fieldset and hide others
+                      function showFieldset(current, next) {
+                        document.querySelector(current).style.display = 'none';
+                        document.querySelector(next).style.display = 'block';
+                      }
+                    
+                      // Add event listeners to Next buttons
+                      const nextButtons = document.querySelectorAll('.next-btn');
+                      nextButtons.forEach((button, index) => {
+                        button.addEventListener('click', function() {
+                          const fieldsets = ['.provide-details', '.fill-exam', '.review-details', '.payment'];
+                          if (index < fieldsets.length - 1) {
+                            showFieldset(fieldsets[index], fieldsets[index + 1]);
+                          }
+                        });
+                      });
+                    
+                      // Add event listeners to Previous buttons
+                      const prevButtons = document.querySelectorAll('.prev-btn');
+                      prevButtons.forEach((button, index) => {
+                        button.addEventListener('click', function() {
+                          const fieldsets = ['.provide-details', '.fill-exam', '.review-details', '.payment'];
+                          if (index >= 0) {
+                            showFieldset(fieldsets[index + 1], fieldsets[index]);
+                          }
+                        });
+                      });
+                    </script>
+
+
+                  </div>
+
+                </div>
+              </div> 
+                     
+        </div>
+       
+
+         
+          
+
+
+          
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            © 2024 Certaining, All Rights Reserved.
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+     
+    <!-- <script src="/vendors/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    
+    <!-- <script src="/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+    <!-- <script src="/build/js/custom.min.js"></script> -->
+
+    <script src="/asset/js/my.js"></script>
+	
+  </body>
+</html>
