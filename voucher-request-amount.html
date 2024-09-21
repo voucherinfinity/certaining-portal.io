@@ -218,12 +218,12 @@
                 
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <a href="javascript:void(0)" class="examvoucher">Voucher Request (via Exam)</a>
-                            <a href="javascript:void(0)" class="amountvoucher">Voucher Request (via Amount)</a>                        
+                            <a href="voucher-request.html" class="examvoucher">Voucher Request (via Exam)</a>
+                            <a href="" class="amountvoucher">Voucher Request (via Amount)</a>                        
                         </div>
                         
                         <div class="col-lg-12">
-                            <div class="examvoucher1" style="display: none;">
+                            <!-- <div class="examvoucher1" style="display: none !important;">
                                 <div class="form-row">
                                     <div class="col-lg-2 col-sm-2 col-md-2 pt-3">
                                         <p class="fourm-title"> Exam<span style="color: red;">*</span></p>
@@ -245,8 +245,8 @@
                                     </div>
 
                                 </div>
-                            </div>
-                            <div class="amountvoucher1" style="display: none;">
+                            </div> -->
+                            <div class="examvoucher1" >
                                 <div class="form-row">
                                     <div class="col-lg-2 col-sm-2 col-md-2 pt-3">
                                         <p class="fourm-title">Amount<span style="color: red;">*</span></p>
@@ -254,18 +254,22 @@
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <form class="pt-3">
                                             <select class="form-control" name="" id="">
-                                                <option value="1">Certified Test Center Administrator</option>
-                                                <option value="2">Certified Big Data Professional</option>
-                                                <option value="3">Certified Hadoop Professional</option>
-                                                <option value="4">Certified Data Analyst</option>
+                                                <option value="1">100</option>
+                                                <option value="2">200</option>
+                                                <option value="3">300</option>
+                                                <option value="4">Universal Voucher</option>
                                             </select>
                                         </form>
                                     </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-6 pt-2" style="text-align: center; justify-content: center;">
+                                      <button type="button" action="" class="btn-sm mr-2" style="width: 4rem; background-color: #2a3f54; color: white;">Reset</button>
+                                      <button type="button" class="btn-sm mr-2 reset-button" style="width: 4rem; ">Next</button>
+                                  </div>
                                     
 
                                 </div>
                             </div>
-                            <div class="nextvoucher col-lg-10 col-md-10 col-sm-6" style="display: none;">
+                            <!-- <div class="nextvoucher col-lg-10 col-md-10 col-sm-6" style="display: none !important; " >
                                 <div class="form-row pt-3">
                                     <div class="col-lg-3 col-sm-3 col-md-2">
                                         <p class="fourm-title">Exam Name</p>
@@ -300,12 +304,40 @@
                                         <button type="button" class="btn-sm mr-2" style="width: 5rem;">Next</button>
                                     </div>
                                 </div>
+                            </div> -->
+                            <div class="nextvoucher col-md-10 col-sm-6 col-lg-10" style="display: none;" >
+                              <div class="form-row pt-3">
+                                <div class="col-lg-3 col-sm-3 col-md-2">
+                                    <p class="fourm-title">Amount</p>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-4">
+                                    <input type="text" class="form-control" disabled placeholder="$100">
+                                </div>
+                                
+                                <div class="col-lg-3 col-sm-3 col-md-2">
+                                    <p class="fourm-title">Voucher Count</p>                                        
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-4">
+                                    <input type="text" class="form-control"  placeholder="">
+                                </div>
+                        
+                                <div class="col-lg-3 col-md-3 col-md-2">
+                                    <p class="fourm-title">Message</p>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-4">
+                                  <textarea class="form-control" style="width: 60%;"></textarea>
+                                </div>                                             
+                                <div class="col-lg-8 col-md-9 col-sm-6">
+                                    <button type="button" class="btn-sm mr-2" style="width: 4rem; background-color: #2a3f54; color: white;">Reset</button>
+                                    <button type="button" class="btn-sm mr-2" style="width: 5rem;">Next</button>
+                                </div>
+                              </div>
                             </div>
 
                         </div>
                     </div>
                     
-                   <!-- <script>
+                   <script>
                         document.addEventListener("DOMContentLoaded", function() {
                             // Select the reset button by its class name
                             var resetButton = document.querySelector('.reset-button');
@@ -319,8 +351,8 @@
                             });
                         });
 
-                   </script> -->
-                   <!-- <script>
+                   </script>
+                   <script>
                         document.addEventListener("DOMContentLoaded", function() {
                         var resetButtons = document.querySelectorAll('.reset-button'); // Target all buttons with class 'reset-button'
                         var examVoucherDiv = document.querySelector('.examvoucher1');
@@ -366,8 +398,8 @@
                         });
                     });
 
-                    </script> -->
-                    <script>
+                    </script>
+                    <!-- <script>
                         document.addEventListener("DOMContentLoaded", function() {
                         // Get the exam and amount voucher elements
                         var examLink = document.querySelector('.examvoucher');
@@ -409,7 +441,7 @@
                         });
                     });
 
-                    </script>
+                    </script> -->
                     
                                       
                     
