@@ -67,42 +67,18 @@
                   <li>
                     <a href="/dashboard.html"><i class="fa fa-home"></i> Dashboard 
                       </a>
-                    <!-- <ul class="nav child_menu">
-                      <li><a href="index.html">Dashboard</a></li>
-                      <li><a href="index2.html">Dashboard2</a></li>
-                      <li><a href="index3.html">Dashboard3</a></li>
-                    </ul> -->
+                   
                   </li>
-                  <li><a href="candidate-history.html">
+                  <li><a href="/candidate-history.html">
                     <i class="fa fa-history" aria-hidden="true"></i>
                      Candidate History </a>
-                    <!-- <ul class="nav child_menu">
-                      <li><a href="form.html">General Form</a></li>
-                      <li><a href="form_advanced.html">Advanced Components</a></li>
-                      <li><a href="form_validation.html">Form Validation</a></li>
-                      <li><a href="form_wizards.html">Form Wizard</a></li>
-                      <li><a href="form_upload.html">Form Upload</a></li>
-                      <li><a href="form_buttons.html">Form Buttons</a></li>
-                    </ul> -->
+                   
                   </li>
                   <li><a href="/today-exam.html"><i class="fa fa-desktop"></i> Today's Exam </a>
-                    <!-- <ul class="nav child_menu">
-                      <li><a href="general_elements.html">General Elements</a></li>
-                      <li><a href="media_gallery.html">Media Gallery</a></li>
-                      <li><a href="typography.html">Typography</a></li>
-                      <li><a href="icons.html">Icons</a></li>
-                      <li><a href="glyphicons.html">Glyphicons</a></li>
-                      <li><a href="widgets.html">Widgets</a></li>
-                      <li><a href="invoice.html">Invoice</a></li>
-                      <li><a href="inbox.html">Inbox</a></li>
-                      <li><a href="calendar.html">Calendar</a></li>
-                    </ul> -->
+                  
                   </li>
                   <li><a href="/upcoming-exam.html"><i class="fa fa-table"></i> Upcoming Exam </a>
-                    <!-- <ul class="nav child_menu">
-                      <li><a href="tables.html">Tables</a></li>
-                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
-                    </ul> -->
+                  
                   </li>
                   <li>
                     <a href="/cancel-exam.html">
@@ -110,7 +86,7 @@
                     
                   </li>
                   <li>
-                    <a href="/sechdule-new-exam.html">
+                    <a href="sechdule-new-exam.html">
                       <i class="fa fa-edit"></i> Shedule New Exam </a>
                     
                   </li>
@@ -141,14 +117,52 @@
                     
                   </li>
                   <li>
-                    <a href="#">
-                      <i class="fa fa-check" aria-hidden="true"></i> Seat Availability </a>
-                    
-                  </li>
+                    <a href="javascript:void(0);" class="toggle-menu">
+                      <i class="fa fa-check" aria-hidden="true"></i> Seat Availability <span class="fa fa-chevron-down"></span>
+                     </a>
+                    <ul class="nav child_menu" style="display: none;">
+                      <li>
+                        <a href="javascript:void(0);" class="toggle-menu">
+                          1. Seat Management <span class="fa fa-chevron-down"></span>
+                        </a>
+                        <ul class="nav child_menu" style="display: none;">
+                          <li class="sub_menu"><a href="add-seat.html">1.1 Add Seat</a></li>
+                          <li><a href="#level2_1">1.2 Manage Seats</a></li>                         
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="toggle-menu">
+                          2. Operational Hours <span class="fa fa-chevron-down"></span>
+                        </a>
+                        <ul class="nav child_menu" style="display: none;">
+                          <li class="sub_menu"><a href="level2.html">2.1 Add Operational Hours</a></li>
+                          <li><a href="#level2_1">2.2 Manage Hours</a></li>                         
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>                  
                 </ul>
               </div>
            
             </div>
+          
+          <script>
+             document.querySelectorAll('.toggle-menu').forEach(function (menu) {
+        menu.addEventListener('click', function (event) {
+        // Find the nearest child menu
+        var childMenu = this.nextElementSibling;
+        
+        // Toggle the display property
+        if (childMenu && childMenu.classList.contains('child_menu')) {
+            if (childMenu.style.display === 'block') {
+                childMenu.style.display = 'none';
+            } else {
+                childMenu.style.display = 'block';
+                      }
+                  }
+              });
+          });
+          </script>
           
 
         

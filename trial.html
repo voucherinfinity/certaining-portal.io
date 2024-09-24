@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/favicon.ico" type="image/ico" />
-    <meta name="viewport" content="initial-scale=1.0; user-scalable=1;">
 
     <title>Dashboard Central Panel</title>
 
@@ -67,21 +66,45 @@
                   <li>
                     <a href="/dashboard.html"><i class="fa fa-home"></i> Dashboard 
                       </a>
-                   
+                    <!-- <ul class="nav child_menu">
+                      <li><a href="index.html">Dashboard</a></li>
+                      <li><a href="index2.html">Dashboard2</a></li>
+                      <li><a href="index3.html">Dashboard3</a></li>
+                    </ul> -->
                   </li>
-                  <li><a href="/candidate-history.html">
+                  <li><a href="candidate-history.html">
                     <i class="fa fa-history" aria-hidden="true"></i>
                      Candidate History </a>
-                   
+                    <!-- <ul class="nav child_menu">
+                      <li><a href="form.html">General Form</a></li>
+                      <li><a href="form_advanced.html">Advanced Components</a></li>
+                      <li><a href="form_validation.html">Form Validation</a></li>
+                      <li><a href="form_wizards.html">Form Wizard</a></li>
+                      <li><a href="form_upload.html">Form Upload</a></li>
+                      <li><a href="form_buttons.html">Form Buttons</a></li>
+                    </ul> -->
                   </li>
                   <li><a href="/today-exam.html"><i class="fa fa-desktop"></i> Today's Exam </a>
-                  
+                    <!-- <ul class="nav child_menu">
+                      <li><a href="general_elements.html">General Elements</a></li>
+                      <li><a href="media_gallery.html">Media Gallery</a></li>
+                      <li><a href="typography.html">Typography</a></li>
+                      <li><a href="icons.html">Icons</a></li>
+                      <li><a href="glyphicons.html">Glyphicons</a></li>
+                      <li><a href="widgets.html">Widgets</a></li>
+                      <li><a href="invoice.html">Invoice</a></li>
+                      <li><a href="inbox.html">Inbox</a></li>
+                      <li><a href="calendar.html">Calendar</a></li>
+                    </ul> -->
                   </li>
-                  <li><a href="/upcoming-exam.html"><i class="fa fa-table"></i> Upcoming Exam </a>
-                  
+                  <li><a href="upcoming-exam.html"><i class="fa fa-table"></i> Upcoming Exam </a>
+                    <!-- <ul class="nav child_menu">
+                      <li><a href="tables.html">Tables</a></li>
+                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                    </ul> -->
                   </li>
                   <li>
-                    <a href="/cancel-exam.html">
+                    <a href="cancel-exam.html">
                       <i class="fa fa-calendar-times-o" aria-hidden="true"></i> Cancel Exam </a>
                     
                   </li>
@@ -117,52 +140,14 @@
                     
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="toggle-menu">
-                      <i class="fa fa-check" aria-hidden="true"></i> Seat Availability <span class="fa fa-chevron-down"></span>
-                     </a>
-                    <ul class="nav child_menu" style="display: none;">
-                      <li>
-                        <a href="javascript:void(0);" class="toggle-menu">
-                          1. Seat Management <span class="fa fa-chevron-down"></span>
-                        </a>
-                        <ul class="nav child_menu" style="display: none;">
-                          <li class="sub_menu"><a href="add-seat.html">1.1 Add Seat</a></li>
-                          <li><a href="#level2_1">1.2 Manage Seats</a></li>                         
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);" class="toggle-menu">
-                          2. Operational Hours <span class="fa fa-chevron-down"></span>
-                        </a>
-                        <ul class="nav child_menu" style="display: none;">
-                          <li class="sub_menu"><a href="level2.html">2.1 Add Operational Hours</a></li>
-                          <li><a href="#level2_1">2.2 Manage Hours</a></li>                         
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>                  
+                    <a href="#">
+                      <i class="fa fa-check" aria-hidden="true"></i> Seat Availability </a>
+                    
+                  </li>
                 </ul>
               </div>
            
             </div>
-          
-          <script>
-             document.querySelectorAll('.toggle-menu').forEach(function (menu) {
-        menu.addEventListener('click', function (event) {
-        // Find the nearest child menu
-        var childMenu = this.nextElementSibling;
-        
-        // Toggle the display property
-        if (childMenu && childMenu.classList.contains('child_menu')) {
-            if (childMenu.style.display === 'block') {
-                childMenu.style.display = 'none';
-            } else {
-                childMenu.style.display = 'block';
-                      }
-                  }
-              });
-          });
-          </script>
           
 
         
@@ -214,105 +199,115 @@
               </ul>
             </nav>
           </div>
-        </div>
-       
-
-        
+        </div>     
         <div class="right_col" role="main" style="min-height: 102vh;">
             <div class="container">
                 <div class="row">
-                    <h2 class="header" style="margin-left: 10px;">
-                        <span >Home</span> > Upcoming Exam
-                    </h2>
+                    <h2 class="header"><span >Home</span> > Create Hours</h2>
 
                 </div>
             </div>
             <div class="container">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="form-container" style="min-height: 0 !important; display: block;">
-                        <form  class="pt-5">                                                       
+                    <div class="form-container">
+                        <form class="form1">
+                            <h3 class="fourm-title">Add Hours</h3>
                             <div class="form-row">
-                                <div class="form-group col-md-3">
-                                    <input type="date" class="form-control" id="calendar" placeholder="Enter the details for the selected field">
-                                </div>
-                                <div class="form-group col-md-3">                              
-                                
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                        <option value="1">First Name</option>
-                                        <option value="2">Last Name</option>
-                                        <option value="3">Registrater Name</option>
-                                        <option value="4">Candidate ID</option>
-                                        <option value="5">Mobile Number</option>
-                                        <option value="6">Email Id</option>
-                                        </select>
-                                </div>
-                                <div class="form-group col-md-3">
-                                
-                                    <input type="text" class="form-control" id="text" placeholder="Enter the details for the selected field">
-                                </div>
-                              <div class="form-group col-md-2">
-                                <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 25px;">Search</button>
-                              </div>
-                            </div>                        
-                          </form>
                           
-                         
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword4">Type</label>
+                                <select class="form-control" id="typeSelect">
+                                  <option value="0" selected disabled>Select</option>
+                                  <option value="1">Timing</option>
+                                  <option value="2">Holiday</option>
+                                </select>
+                              </div>
+                          
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Select Date*</label>
+                                <input type="date" class="form-control">
+                              </div>
+                          
+                              <div class="form-group col-md-6" >
+                                <label for="inputEmail4" style="display: flex; justify-content: space-between;">
+                                  <p style="margin-bottom: 0;">End Date*</p>
+                                  <div class="form-check"id="endDateSection">
+                                    <input class="form-check-input" type="checkbox" id="noEndDateCheckbox">
+                                    <label class="form-check-label" for="noEndDateCheckbox" style="margin-top: 0;">
+                                      No End Date
+                                    </label>
+                                  </div>
+                                </label>
+                                <input type="date" class="form-control" id="endDateInput">
+                              </div>
+                          
+                              <div class="form-group col-md-6" id="startTimeSection">
+                                <label for="startTime">Start Time*</label>
+                                <input type="time" class="form-control" id="startTime">
+                              </div>
+                          
+                              <div class="form-group col-md-6" id="endTimeSection">
+                                <label for="endTime" style="display: flex; justify-content: space-between;">
+                                  <p style="margin-bottom: 0;">End Time*</p>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="allDaysCheckbox">
+                                    <label class="form-check-label" for="allDaysCheckbox" style="margin-top: 0;">
+                                      All Days
+                                    </label>
+                                  </div>
+                                </label>
+                                <input type="time" class="form-control" id="endTime">
+                              </div>
+                          
+                              <!-- Weekly off checkboxes (remaining the same) -->
+                          
+                              <div class="form-group col-md-12 pt-3">
+                                <select class="form-control">
+                                  <option value="1">Active</option>
+                                  <option value="2">Inactive</option>
+                                </select>
+                              </div>
+                            </div>
+                          
+                            <br>
+                            <button type="submit" class="btn btn-primary" style="width: 25%; border-radius: 25px; background-color: red; border-color: red;">Reset</button>
+                            <button type="submit" class="btn btn-primary" style="width: 25%; border-radius: 25px; float: right;">Submit</button>
+                          </form>
                     </div>
-                 
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="header pt-3 pb-2" style=" border: 1px solid #646761; background-color: #2a3f54; color: white; ">
-                        <h4 style="color: white; font-size: 18px; padding: 1px 17px;"> Upcoming Exam</h4>
-                      </div>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-6">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">Candidate ID</th>
-                                <th scope="col">Registration Number	</th>
-                                <th scope="col">Candidate Name	</th>
-                                <th scope="col">Exam Name</th>
-                                <th scope="col">Exam Date & Time</th>
-                                <th scope="col">Exam Status	</th>
-                                <th scope="col">Action </th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>                                
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                  </div>
-                    
+                    <script>
+                        // Hide and show sections based on selected type
+                        document.getElementById('typeSelect').addEventListener('change', function() {
+                          var selectedValue = this.value;
+                          var endDateSection = document.getElementById('endDateSection');
+                          var startTimeSection = document.getElementById('startTimeSection');
+                          var endTimeSection = document.getElementById('endTimeSection');
+                          
+                          if (selectedValue == '2') { // If 'Holiday' is selected
+                            endDateSection.style.display = 'none';
+                            startTimeSection.style.display = 'none';
+                            endTimeSection.style.display = 'none';
+                          } else { // If 'Timing' is selected
+                            endDateSection.style.display = ''; // Show the fields again
+                            startTimeSection.style.display = 'block';
+                            endTimeSection.style.display = 'block';
+                          }
+                        });
+                      
+                        // Disable/Enable "End Date" input based on "No End Date" checkbox
+                        document.getElementById('noEndDateCheckbox').addEventListener('change', function() {
+                          var endDateInput = document.getElementById('endDateInput');
+                          endDateInput.disabled = this.checked;
+                        });
+                      
+                        // Disable/Enable "Start Time" and "End Time" inputs based on "All Days" checkbox
+                        document.getElementById('allDaysCheckbox').addEventListener('change', function() {
+                          var startTimeInput = document.getElementById('startTime');
+                          var endTimeInput = document.getElementById('endTime');
+                          startTimeInput.disabled = this.checked;
+                          endTimeInput.disabled = this.checked;
+                        });
+                      </script>
                   </div>
                 </div>
             </div>

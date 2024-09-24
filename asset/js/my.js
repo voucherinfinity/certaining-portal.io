@@ -51,6 +51,10 @@ function removePlaceholder() {
     }
 }
 
+
+
+
+
 // Ensure placeholder is shown initially if no date selected
 addPlaceholder();
 
