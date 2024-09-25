@@ -1,350 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owl Carousel Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
 
-    <title>Dashboard Central Panel</title>
+<div class="container">
+  <div class="owl-carousel owl-theme">
+    <div class="item"><h4>Slide 1</h4></div>
+    <div class="item"><h4>Slide 2</h4></div>
+    <div class="item"><h4>Slide 3</h4></div>
+    <div class="item"><h4>Slide 4</h4></div>
+    <div class="item"><h4>Slide 5</h4></div>
+  </div>
+</div>
 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-   
-    <!-- <link href="/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
-    <!-- NProgress -->
-    <!-- <link href="../vendors/nprogress/nprogress.css" rel="stylesheet"> -->
-    <!-- iCheck -->
-    <!-- <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet"> -->
-	
-    <!-- bootstrap-progressbar -->
-    <!-- <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet"> -->
-    <!-- JQVMap -->
-    <!-- <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/> -->
-    <!-- bootstrap-daterangepicker -->
-    <!-- <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet"> -->
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <!-- Custom Theme Style -->
-    <!-- <link href="/build/css/custom.min.css" rel="stylesheet"> -->
-   
-    <!-- <link rel="stylesheet" href="/scss/custom.scss"> -->
-    <!-- <link rel="stylesheet" href="/build/css/123.css"> -->
-    <link rel="stylesheet" href="/asset/css/1234.css">
-    <!-- <link rel="stylesheet" href="/build/css/custom.min.css"> -->
-  </head>
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,        // Hide navigation arrows
+      dots: false,       // Hide dots
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  });
+</script>
 
-  <body class="nav-md">
-    <div class="container body">
-      <div class="main_container">
-        <div class="col-md-3 left_col">
-          <div class="left_col scroll-view">
-            <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><img src="/asset/img/Logo1 (2).png" width="90%" alt="" srcset=""> </a>
-            </div>
-
-            <div class="clearfix"></div>
-
-           
-            <div class="profile clearfix">
-              <div class="profile_pic">
-                <img src="/asset/img/profile.webp" alt="..." class="img-circle profile_img">
-              </div>
-              <div class="profile_info">
-                <span>Welcome,</span>
-                <h2>John Doe</h2>
-              </div>
-            </div>       
-            <br/>          
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              <div class="menu_section">
-                <!-- <h3>General</h3> -->
-                <ul class="nav side-menu">
-                  <li>
-                    <a href="/dashboard.html"><i class="fa fa-home"></i> Dashboard 
-                      </a>
-                    <!-- <ul class="nav child_menu">
-                      <li><a href="index.html">Dashboard</a></li>
-                      <li><a href="index2.html">Dashboard2</a></li>
-                      <li><a href="index3.html">Dashboard3</a></li>
-                    </ul> -->
-                  </li>
-                  <li><a href="candidate-history.html">
-                    <i class="fa fa-history" aria-hidden="true"></i>
-                     Candidate History </a>
-                    <!-- <ul class="nav child_menu">
-                      <li><a href="form.html">General Form</a></li>
-                      <li><a href="form_advanced.html">Advanced Components</a></li>
-                      <li><a href="form_validation.html">Form Validation</a></li>
-                      <li><a href="form_wizards.html">Form Wizard</a></li>
-                      <li><a href="form_upload.html">Form Upload</a></li>
-                      <li><a href="form_buttons.html">Form Buttons</a></li>
-                    </ul> -->
-                  </li>
-                  <li><a href="/today-exam.html"><i class="fa fa-desktop"></i> Today's Exam </a>
-                    <!-- <ul class="nav child_menu">
-                      <li><a href="general_elements.html">General Elements</a></li>
-                      <li><a href="media_gallery.html">Media Gallery</a></li>
-                      <li><a href="typography.html">Typography</a></li>
-                      <li><a href="icons.html">Icons</a></li>
-                      <li><a href="glyphicons.html">Glyphicons</a></li>
-                      <li><a href="widgets.html">Widgets</a></li>
-                      <li><a href="invoice.html">Invoice</a></li>
-                      <li><a href="inbox.html">Inbox</a></li>
-                      <li><a href="calendar.html">Calendar</a></li>
-                    </ul> -->
-                  </li>
-                  <li><a href="upcoming-exam.html"><i class="fa fa-table"></i> Upcoming Exam </a>
-                    <!-- <ul class="nav child_menu">
-                      <li><a href="tables.html">Tables</a></li>
-                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
-                    </ul> -->
-                  </li>
-                  <li>
-                    <a href="cancel-exam.html">
-                      <i class="fa fa-calendar-times-o" aria-hidden="true"></i> Cancel Exam </a>
-                    
-                  </li>
-                  <li>
-                    <a href="sechdule-new-exam.html">
-                      <i class="fa fa-edit"></i> Shedule New Exam </a>
-                    
-                  </li>
-                  <li>
-                    <a href="/reschedule-exam.html">
-                      <i class="fa fa-refresh" aria-hidden="true"></i> Re-schedule Exam </a>
-                    
-                  </li>
-                  <li>
-                    <a href="exam-login-details.html">
-                      <i class="fa fa-sign-in" aria-hidden="true"></i> Exam Login Details </a>
-                    
-                  </li>
-                  <li>
-                    <a href="voucher-request.html">
-                      <i class="fa fa-ticket" aria-hidden="true"></i> Voucher Request </a>
-                    
-                  </li>
-                  <li>
-                    <a href="report.html">
-                      <i class="fa fa-list-alt" aria-hidden="true"></i> Report </a>
-                    
-                  </li>
-                  <li>
-                    <a href="https://certaining.org/contact-us">
-                      <i class="fa fa-phone" aria-hidden="true"></i>
-                       Support </a>
-                    
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-check" aria-hidden="true"></i> Seat Availability </a>
-                    
-                  </li>
-                </ul>
-              </div>
-           
-            </div>
-          
-
-        
-            <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Settings">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                <i class="fa fa-user" aria-hidden="true"></i>
-              </a>
-              <!-- <a data-toggle="tooltip" data-placement="top" title="Lock">
-                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-              </a> -->
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-                <i class="fa fa-power-off" aria-hidden="true"></i>
-              </a>
-            </div>
-          
-          </div>
-        </div>
-
- 
-        <div class="top_nav">
-          <div class="nav_menu">
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-              </div>
-              <nav class="nav navbar-nav">
-              <ul class=" navbar-right">
-                <li class="nav-item dropdown open" style="padding-left: 15px;">
-                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                    <img src="/asset/img/profile.webp" alt="">John Doe
-                  </a>
-
-
-                  <!----yaha tak katam hoo gya--->
-                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"  href="javascript:;"> Profile</a>
-                      <!-- <a class="dropdown-item"  href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
-                        <span>Settings</span>
-                      </a> -->
-                  <a class="dropdown-item"  href="javascript:;">Support</a>
-                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
-                  </div>
-                </li>
-
-                
-              </ul>
-            </nav>
-          </div>
-        </div>     
-        <div class="right_col" role="main" style="min-height: 102vh;">
-            <div class="container">
-                <div class="row">
-                    <h2 class="header"><span >Home</span> > Create Hours</h2>
-
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="form-container">
-                        <form class="form1">
-                            <h3 class="fourm-title">Add Hours</h3>
-                            <div class="form-row">
-                          
-                              <div class="form-group col-md-12">
-                                <label for="inputPassword4">Type</label>
-                                <select class="form-control" id="typeSelect">
-                                  <option value="0" selected disabled>Select</option>
-                                  <option value="1">Timing</option>
-                                  <option value="2">Holiday</option>
-                                </select>
-                              </div>
-                          
-                              <div class="form-group col-md-6">
-                                <label for="inputEmail4">Select Date*</label>
-                                <input type="date" class="form-control">
-                              </div>
-                          
-                              <div class="form-group col-md-6" >
-                                <label for="inputEmail4" style="display: flex; justify-content: space-between;">
-                                  <p style="margin-bottom: 0;">End Date*</p>
-                                  <div class="form-check"id="endDateSection">
-                                    <input class="form-check-input" type="checkbox" id="noEndDateCheckbox">
-                                    <label class="form-check-label" for="noEndDateCheckbox" style="margin-top: 0;">
-                                      No End Date
-                                    </label>
-                                  </div>
-                                </label>
-                                <input type="date" class="form-control" id="endDateInput">
-                              </div>
-                          
-                              <div class="form-group col-md-6" id="startTimeSection">
-                                <label for="startTime">Start Time*</label>
-                                <input type="time" class="form-control" id="startTime">
-                              </div>
-                          
-                              <div class="form-group col-md-6" id="endTimeSection">
-                                <label for="endTime" style="display: flex; justify-content: space-between;">
-                                  <p style="margin-bottom: 0;">End Time*</p>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="allDaysCheckbox">
-                                    <label class="form-check-label" for="allDaysCheckbox" style="margin-top: 0;">
-                                      All Days
-                                    </label>
-                                  </div>
-                                </label>
-                                <input type="time" class="form-control" id="endTime">
-                              </div>
-                          
-                              <!-- Weekly off checkboxes (remaining the same) -->
-                          
-                              <div class="form-group col-md-12 pt-3">
-                                <select class="form-control">
-                                  <option value="1">Active</option>
-                                  <option value="2">Inactive</option>
-                                </select>
-                              </div>
-                            </div>
-                          
-                            <br>
-                            <button type="submit" class="btn btn-primary" style="width: 25%; border-radius: 25px; background-color: red; border-color: red;">Reset</button>
-                            <button type="submit" class="btn btn-primary" style="width: 25%; border-radius: 25px; float: right;">Submit</button>
-                          </form>
-                    </div>
-                    <script>
-                        // Hide and show sections based on selected type
-                        document.getElementById('typeSelect').addEventListener('change', function() {
-                          var selectedValue = this.value;
-                          var endDateSection = document.getElementById('endDateSection');
-                          var startTimeSection = document.getElementById('startTimeSection');
-                          var endTimeSection = document.getElementById('endTimeSection');
-                          
-                          if (selectedValue == '2') { // If 'Holiday' is selected
-                            endDateSection.style.display = 'none';
-                            startTimeSection.style.display = 'none';
-                            endTimeSection.style.display = 'none';
-                          } else { // If 'Timing' is selected
-                            endDateSection.style.display = ''; // Show the fields again
-                            startTimeSection.style.display = 'block';
-                            endTimeSection.style.display = 'block';
-                          }
-                        });
-                      
-                        // Disable/Enable "End Date" input based on "No End Date" checkbox
-                        document.getElementById('noEndDateCheckbox').addEventListener('change', function() {
-                          var endDateInput = document.getElementById('endDateInput');
-                          endDateInput.disabled = this.checked;
-                        });
-                      
-                        // Disable/Enable "Start Time" and "End Time" inputs based on "All Days" checkbox
-                        document.getElementById('allDaysCheckbox').addEventListener('change', function() {
-                          var startTimeInput = document.getElementById('startTime');
-                          var endTimeInput = document.getElementById('endTime');
-                          startTimeInput.disabled = this.checked;
-                          endTimeInput.disabled = this.checked;
-                        });
-                      </script>
-                  </div>
-                </div>
-            </div>
-       
-
-         
-          
-
-
-          
-        </div>
-        <!-- /page content -->
-
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            © 2024 Certaining, All Rights Reserved.
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
-      </div>
-    </div>
-
-    <!-- jQuery -->
-     
-    <!-- <script src="/vendors/jquery/dist/jquery.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    
-    <!-- <script src="/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom Theme Scripts -->
-    <!-- <script src="/build/js/custom.min.js"></script> -->
-
-    <script src="/asset/js/my.js"></script>
-	
-  </body>
+</body>
 </html>
