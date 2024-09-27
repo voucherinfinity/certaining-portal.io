@@ -589,13 +589,13 @@
                           <label for="">Exam Fees: <span style="font-size: 18px; color: red;">*</span> </label>
                           <input class="form-control" type="text" name="" id="" disabled placeholder="$200">
                         </div>
-                        <div class="col-md-4">
+                        <!-- <div class="col-md-4">
                           <label for="">Exam Date: <span style="font-size: 18px; color: red;">*</span> </label>
                           <input type="date" class="form-control placeholder" id="calendar" onfocus="removePlaceholder()" onblur="addPlaceholder()" placeholder="Select a date">
-                        </div>
+                        </div> -->
                         <div class="col-md-4">
-                          <label for="">Exam Time: <span style="font-size: 18px; color: red;">*</span> </label>
-                          <input id="examTime" type="time" class="form-control" min="09:00" max="17:00">
+                          <label for="">Exam Date & Time: <span style="font-size: 18px; color: red;">*</span> </label>
+                          <input id="text" type="button" class="form-control" min="09:00" max="17:00" data-toggle="modal" data-target="#exampleModal" placeholder="Select Date & TIme">
                         </div>
                         <div class="col-md-12" style="float: inline-end;">
                           <button type="button" class="next-btn" style="float: inline-end; background-color: #2a3f54; color: white;" >Next</button>
@@ -605,6 +605,122 @@
                         <!-- <button  type="button" class="prev-btn">Previous</button> -->
                         
                       </div>
+
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header" style="background-color: #2a3f54 !important;">
+                              <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Select Date & Time</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" style="color: white;">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 ms-auto"> <h5>Select Date </h5> </div>
+                                    <div class="col-md-6 ms-auto">
+                                        <input type="date" class="form-control" id="text" placeholder="Enter the details for the selected field">
+                                    </div>
+                                    <div class="col-md-2 ms-auto mt-3"><h5>Time Slot</h5> 
+                                    </div>
+                
+                                    <div class="col-md-10 mt-3" >
+                                        
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl00$Btn_time" value="9:00 AM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl00_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl01$Btn_time" value="9:30 AM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl01_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl02$Btn_time" value="10:00 AM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl02_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl03$Btn_time" value="10:30 AM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl03_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl04$Btn_time" value="11:00 AM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl04_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl05$Btn_time" value="11:30 AM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl05_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl06$Btn_time" value="12:00 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl06_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl07$Btn_time" value="12:30 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl07_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl08$Btn_time" value="1:00 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl08_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl09$Btn_time" value="1:30 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl09_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl10$Btn_time" value="2:00 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl10_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl11$Btn_time" value="2:30 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl11_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl12$Btn_time" value="3:00 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl12_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl13$Btn_time" value="3:30 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl13_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl14$Btn_time" value="4:00 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl14_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl15$Btn_time" value="4:30 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl15_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl16$Btn_time" value="5:00 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl16_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl17$Btn_time" value="5:30 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl17_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl18$Btn_time" value="6:00 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl18_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>
+                                  
+                                      <div class="inline">
+                                          <input type="submit" name="ctl00$ContentPlaceHolder1$RepDetails_Morning$ctl19$Btn_time" value="6:30 PM" id="ctl00_ContentPlaceHolder1_RepDetails_Morning_ctl19_Btn_time" class="btn btn-primary" style="width:85px;margin-bottom: 2px;">
+                                      </div>                                
+                                    </div>
+
+                                    <div class="col-md-12 mt-3" style="text-align: end;">
+                                        <button class="btn-primary btn-sm" style="border-radius: 15px; background-color: red; border-color: red;"> Reset</button>
+                                        <button class="btn-primary btn-sm" style="border-radius: 15px;"> Submit</button>
+                                    </div>
+                                  
+                                </div>              
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+
                     </fieldset>
                     <fieldset class="review-details" style="display: none;">
                       <div class="form-row">

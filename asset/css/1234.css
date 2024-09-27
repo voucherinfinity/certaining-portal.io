@@ -1049,3 +1049,7 @@ thead tr th {
     margin-top: 0px;
     color: #ffffff;
 }
+.inline{
+	display: inline;
+	margin: 0px;
+}
